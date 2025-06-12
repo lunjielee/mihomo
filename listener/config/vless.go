@@ -20,6 +20,7 @@ type VlessServer struct {
 	Decryption      string
 	WsPath          string
 	GrpcServiceName string
+	UserAgent       string
 	Certificate     string
 	PrivateKey      string
 	EchKey          string
