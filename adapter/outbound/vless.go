@@ -491,6 +491,7 @@ func NewVless(option VlessOption) (*Vless, error) {
 
 		gunConfig := &gun.Config{
 			ServiceName:       v.option.GrpcOpts.GrpcServiceName,
+			UserAgent:         v.option.GrpcOpts.UserAgent,
 			Host:              v.option.ServerName,
 			ClientFingerprint: v.option.ClientFingerprint,
 		}
